@@ -1,0 +1,42 @@
+// Variables
+            double earnings, yearsWorked;
+            string myMessage = "";
+            
+            // Prompt user for input
+
+            Console.Write("How much is your yearly wage?: ");
+            earnings = double.Parse(Console.ReadLine());
+            Console.Write("\nHow many years have you worked at your current position?: ");
+            yearsWorked = double.Parse(Console.ReadLine());
+
+
+            // Display whether or not they qualify
+
+
+            if (earnings < 30000)
+            {
+                myMessage = "You do not qualify, earnings too low";
+
+
+            }
+
+
+            
+
+            else
+            {
+                if (yearsWorked < 2)
+                {
+                    myMessage = "you do not qualify, not enough years worked";
+                }
+
+                else
+                {
+                    myMessage = "Congrats, you qualify";
+                }
+
+            }
+
+            Console.WriteLine(myMessage);
+
+            Console.ReadKey();
