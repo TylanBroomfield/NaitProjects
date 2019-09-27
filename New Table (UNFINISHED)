@@ -1,0 +1,26 @@
+CREATE TABLE Course(
+	CourseID		CHAR(6)		NOT NULL	CONSTRAINT PK_Course PRIMARY KEY CLUSTERED(CourseID)
+,	CourseName		VARCHAR(40) NOT NULL
+,	"Hours"			SMALLINT	NOT NULL
+,	NoOfStudents	SMALLINT	NOT NULL
+)
+
+CREATE TABLE Student(
+	StudentID		INT	IDENTITY(1,1)
+,	StudentFirst	VARCHAR(40)
+,	StudentLast		VARCHAR(40)
+,	GenderCode		CHAR(1)
+,	"Address"		VARCHAR(30)
+,	BirthDate		DATETIME
+,	PostalCode		CHAR(6)
+,	AvgMark			DECIMAL(4,1)
+,	NoOfCourses		SMALLINT
+
+
+)
+
+CREATE TABLE Grade(
+	StudentID	INT			NOT NULL
+,	CourseID	CHAR(6)		NOT NULL	CONSTRAINT FK_GradeToCourse FOREIGN KEY(CourseID) REFERENCES Course(CourseID)
+,	Mark		SMALLINT	NOT NULL
+)
