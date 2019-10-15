@@ -1,0 +1,47 @@
+SELECT 
+	FirstName
+,	LastName
+FROM Staff
+
+UNION ALL
+
+SELECT
+	FirstName
+,	LastName
+FROM Student
+
+SELECT 
+	OfferingCode
+	
+,	AVG(Mark) AS AverageMark
+,	MIN(Mark) AS 'Min'
+,	MAX(Mark) AS MaxMark
+,	SUM(Mark) AS SumOfMarks
+FROM Registration
+GROUP BY OfferingCode
+
+SELECT
+	FirstName
+,	LastName
+,	StaffID
+FROM Staff
+
+UNION
+
+SELECT
+	FirstName
+,	LastName
+,	Birthdate
+FROM Student
+
+SELECT 
+	COUNT(FirstName) AS countFirstName
+,	COUNT(DateReleased) AS CountDateReleased
+,	COUNT(*) AS CountRows
+FROM Staff
+
+SELECT
+	COUNT(*) AS NumRows
+,	COUNT(DISTINCT FirstName) AS NumUniqueName
+,	COUNT(FirstName) AS NumName
+FROM Student
