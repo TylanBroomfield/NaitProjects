@@ -1,0 +1,27 @@
+int coinToss, tossTotal, result;
+            Random rand = new Random();
+
+
+            Console.WriteLine("how many times do you want to flip the  coin?");
+            coinToss = int.Parse(Console.ReadLine());
+
+
+            tossTotal = 0;
+            while(tossTotal < coinToss)
+            {
+                result = rand.Next(0, 2);
+
+                if (result == 1)
+                {
+                    Console.Write("heads");
+                }
+                else
+                {
+                    Console.Write("tails");
+                }
+
+                tossTotal++;
+                Console.WriteLine(" is toss #{0} ", tossTotal);
+                
+
+            }
