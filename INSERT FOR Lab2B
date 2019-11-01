@@ -1,0 +1,22 @@
+
+Question1.
+
+INSERT INTO Region (RegionID, Name, SupervisorFirstName,SupervisorLastName, ZoneID)
+VALUES (400, 'Calmar', 'David', 'Smithers', 3)
+,	   (500, 'Thorsby', 'jane' ,'jacobs', (SELECT ZoneID FROM Region WHERE RegionID = 300))
+
+Question2.
+
+a)
+UPDATE DeliveryType
+SET Charge = Charge + 0.10
+WHERE Description = 'daily'
+
+b)
+UPDATE Customer
+SET PrePaidTip = PrePaidTip * 1.1
+WHERE RouteID = 1 OR RouteID = 5
+
+c)
+DELETE Carrier
+WHERE CarrierID NOT IN (SELECT DISTINCT CarrierID FROM Route)
