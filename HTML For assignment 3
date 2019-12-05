@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>the beaten path</title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.gif" alt="logo">
+            <h1>THE <span class="redtext">BEATEN</span> PATH</h1>
+            <nav>
+                <a class="link" href="#">SHOP</a>
+                <a class="link" href="#">CHECKOUT</a>
+                <a class="link" href="#"><img src="img/search-icon.png" alt="search icon"></a>
+            </nav>
+        </header>
+        <p class="breadcrumbs">Home</p>
+        <main>
+            <section class="banner">
+                <div class="box">
+                    <h2>ADVENTURES OFF THE BEATEN PATH</h2>
+                    <p class="beaten-path">It's time to explore your path. Where will you go?</p>
+                </div>
+                <article class="popular-articles">
+                    <h2 class="popular">POPULAR ARTICLES</h2>
+                    <article class="article">
+                        <img src="img/hiking-trail-image.jpg">
+                        <h2 class="image-title">HIKING</h2>
+                        <img class="image" src="img/tent-image.jpg">
+                        <h2 class="image-title">CAMPING</h2>
+                        <img  src="img/whitewater-rafting.jpg">
+                        <h2 class="image-title">RAFTING</h2>
+                        <img class="image" src="img/fishing-image.jpg">
+                        <h2 class="image-title">FISHING</h2>
+                    </article>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
