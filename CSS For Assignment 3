@@ -1,0 +1,98 @@
+.container {
+    margin: 0 auto;
+    width: 960px;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid #cdcdcd;
+    font-family: fjalla one;
+    padding: 10.1px;
+    color: #3c3d40;
+}
+
+h1{
+    font-size: 30px;
+    font-display: bold;
+    margin-left: 12.7px;
+}
+
+.redtext{
+    color: #861919;
+}
+
+nav{
+    margin-left: 462px;
+    font-display: bold;
+}
+.link{
+  
+    color: #3c3d40; 
+}
+
+a{
+    margin-right: 30px;
+}
+
+img{
+    margin-right: 0px;
+}
+
+p{
+    font-family: arial;
+}
+.breadcrumbs{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.banner{
+    background-image: url("../img/banner-image.jpg");
+    height: 240px;
+    padding-top: 180px;
+}
+
+.box{
+    background-color: white;
+    width: 430px;
+    height: 200px;
+    margin-left: 40px;
+
+}
+
+h2{
+    font-family: fjalla one;
+    font-size: 53px;
+    color: #3c3d40;
+    margin-left: 20px;
+}
+
+.beaten-path{
+    margin-left: 20px;
+}
+
+.popular{
+    font-size: 36px;
+    border-bottom: 12.2px solid #861919;
+    margin-top: 100px;
+}
+
+.article{
+    margin-left: 20px;
+    display: flex wrap;    
+}
+
+.image-title{
+    font-size: 24px;
+    background: white;    
+}
+
+.image{
+    margin-left: 16px;
+}
+
+.image-title{
+    font-size: 24px;
+}
